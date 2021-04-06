@@ -1,5 +1,3 @@
-# Sung-EmotioNN-Detector
-
 # About
 EmotioNN is a convolutional neural network (CNN) trained to classify emotions in singing voices.
 To find out more, check out the provided research paper:
