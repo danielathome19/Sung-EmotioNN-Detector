@@ -257,8 +257,8 @@ def train():
     # BUILD 1D CNN LAYERS
     model = make_classifier(X_train, 0.001)
     model.summary()
-    if not os.path.isfile('Model_Diagraph.png'):  # keras plot_model library
-        plot_model(model, to_file='Model_Diagraph.png', show_shapes=True, show_layer_names=True)
+    if not os.path.isfile('Model_Diagram.png'):  # keras plot_model library
+        plot_model(model, to_file='Model_Diagram.png', show_shapes=True, show_layer_names=True)
     # FIT MODEL AND USE CHECKPOINT TO SAVE BEST MODEL
     checkpoint = ModelCheckpoint("best_initial_model.hdf5", monitor='val_accuracy', verbose=1,
                                  save_best_only=True, mode='max', save_freq='epoch', save_weights_only=True)
