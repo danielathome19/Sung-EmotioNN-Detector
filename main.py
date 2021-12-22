@@ -39,7 +39,8 @@ from tensorflow.keras import layers
 from tensorflow.keras.models import Sequential, load_model
 from sklearn import tree
 from sklearn.dummy import DummyClassifier
-from keras.utils import np_utils, to_categorical
+from tensorflow.keras.utils import to_categorical
+from keras.utils import np_utils
 from pydub import AudioSegment
 # ignore warnings
 if not sys.warnoptions:
@@ -168,7 +169,7 @@ def train():
     for index, path in enumerate(audio_df.path):
         X, sample_rate = librosa.load(path, res_type='kaiser_fast', duration=3, sr=44100, offset=0.5)
 
-        # get the mel-scaled spectrogram (ransform both the y-axis (frequency) to log scale, and the
+        # get the mel-scaled spectrogram (transform both the y-axis (frequency) to log scale, and the
         # “color” axis (amplitude) to Decibels, which is kinda the log scale of amplitudes.)
         spectrogram = librosa.feature.melspectrogram(y=X, sr=sample_rate, n_mels=128, fmax=8000)
         db_spec = librosa.power_to_db(spectrogram)
@@ -188,7 +189,7 @@ def train():
         #     contrast = np.mean(contrast, axis= 0)
 
         # compute zero-crossing-rate (zcr:the zcr is the rate of sign changes along a signal i.e.m the rate at
-        #     which the signal changes from positive to negative or back - separation of voiced andunvoiced speech.)
+        #     which the signal changes from positive to negative or back - separation of voiced and unvoiced speech.)
         #     zcr = librosa.feature.zero_crossing_rate(y=X)
         #     zcr = np.mean(zcr, axis= 0)
 
@@ -613,8 +614,8 @@ if __name__ == '__main__':
     # wavsplit('SongTest/Lenskis Aria.wav', 'SongTest/LenskisAriaUnsplitTen/', SPLIT_LEN=10)
     # wavsplit('SongTest/naLauridsen.wav', 'SongTest/Lauridsen/')
     # wavsplit('SongTest/naErlkonig.wav', 'SongTest/Erlkonig/')
-    wavsplit('SongTest/naErlkonig.wav', 'SongTest/ErlkonigTen/', SPLIT_LEN=10)
-    wavsplit('SongTest/Erlkonig.wav', 'SongTest/ErlkonigUnsplitTen/', SPLIT_LEN=10)
+    # wavsplit('SongTest/naErlkonig.wav', 'SongTest/ErlkonigTen/', SPLIT_LEN=10)
+    # wavsplit('SongTest/Erlkonig.wav', 'SongTest/ErlkonigUnsplitTen/', SPLIT_LEN=10)
     # wavsplit('SongTest/Erlkonig.wav', 'SongTest/ErlkonigUnsplit/')
     # wavsplit('SongTest/saLauridsen.wav', 'SongTest/LauridsenUnsplit/')
     # wavsplit('SongTest/CoriolanOverture.wav', 'SongTest/CoriolanOverture/')
