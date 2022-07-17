@@ -8,4 +8,5 @@ title: "Sung-EmotioNN-Detector"
 version: 1.0.0
 doi: 10.48550/arxiv.2105.00173
 date-released: 2021-05-1
+license: Apache-2.0
 url: "https://github.com/danielathome19/Sung-EmotioNN-Detector"
