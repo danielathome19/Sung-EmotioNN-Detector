@@ -24,13 +24,16 @@ Please use the issue tracker for the following purpose:
   * To suggest any improvements in existing features.
   * To suggest new features or structures or applications.
 
+# License
+The code is licensed under Apache License 2.0.
+
 # Citation
 If you use this code for your research, please cite this project:
 ```
 @software{Szelogowski_Sung-EmotioNN-Detector_2021,
  author = {Szelogowski, Daniel},
  doi = {10.48550/arxiv.2105.00173},
- month = {5},
+ month = {May},
  title = {{Sung-EmotioNN-Detector}},
  license = {Apache-2.0},
  url = {https://github.com/danielathome19/Sung-EmotioNN-Detector},
