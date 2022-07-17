@@ -32,6 +32,7 @@ If you use this code for your research, please cite this project:
  doi = {10.48550/arxiv.2105.00173},
  month = {5},
  title = {{Sung-EmotioNN-Detector}},
+ license = {Apache-2.0},
  url = {https://github.com/danielathome19/Sung-EmotioNN-Detector},
  version = {1.0.0},
  year = {2021}
