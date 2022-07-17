@@ -1,7 +1,7 @@
 # About
 EmotioNN is a convolutional neural network (CNN) trained to classify emotions in singing voices.
 To find out more, check out the provided research paper:
-  * "Emotion Recognition of the Singing Voice: Toward a Real-Time Analysis Tool for Singers" (DOI: 10.48550/arxiv.2105.00173) 
+  * "Emotion Recognition of the Singing Voice: Toward a Real-Time Analysis Tool for Singers" (DOI: [10.48550/arxiv.2105.00173](https://doi.org/10.48550/arxiv.2105.00173)) 
   * Also contained in the "PaperAndPresentation" folder is a handout note, the research paper, and presentation of the research.
 
 # Usage
