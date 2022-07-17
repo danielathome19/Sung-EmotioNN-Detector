@@ -23,3 +23,17 @@ Please use the issue tracker for the following purpose:
   * To raise a bug request; do include specific details and label it appropriately.
   * To suggest any improvements in existing features.
   * To suggest new features or structures or applications.
+
+# Citation
+If you use this code for your research, please cite this project:
+```
+@software{Szelogowski_Sung-EmotioNN-Detector_2021,
+ author = {Szelogowski, Daniel},
+ doi = {10.48550/arxiv.2105.00173},
+ month = {5},
+ title = {{Sung-EmotioNN-Detector}},
+ url = {https://github.com/danielathome19/Sung-EmotioNN-Detector},
+ version = {1.0.0},
+ year = {2021}
+}
+```
