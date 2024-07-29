@@ -29,7 +29,7 @@ The code is licensed under Apache License 2.0.
 
 # Citation
 If you use this code for your research, please cite this project:
-```
+```bibtex
 @software{Szelogowski_Sung-EmotioNN-Detector_2021,
  author = {Szelogowski, Daniel},
  doi = {10.48550/arxiv.2105.00173},
